@@ -10,9 +10,7 @@ const options = {
   cert: fs.readFileSync('localhost.pem')
 };
 
-app.use(history({
-  index: '/'
-}))
+app.use(history({ index: '/' }))
 
 app.use('/public', express.static(path.join(__dirname, "/public/")));
 
