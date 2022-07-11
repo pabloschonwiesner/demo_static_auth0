@@ -1,6 +1,9 @@
 const express = require('express')
 const cors = require('cors')
 const https = require('https');
+const fs = require('fs')
+let history = require('connect-history-api-fallback');
+const path = require('path')
 
 const app = express()
 app.use(cors())
